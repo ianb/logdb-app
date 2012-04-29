@@ -1,0 +1,6 @@
+# You MAY put libraries here that you require.
+# You SHOULD instead try to use "pip install" to install things into vendor/
+# You WILL notice some libraries end up in vendor-binary/ : these are libraries
+# that must be built locally.  You should put those libraries into this file.
+# You are NOT recommended to use "pip freeze" to generate this file, as it will
+# include libraries should be present in vendor/

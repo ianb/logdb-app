@@ -1,0 +1,14 @@
+platform: python wsgi
+name: logdb
+add_paths:
+  - logdb-src
+requires:
+  pip: requirements.txt
+wsgi: logdb-app.entrypoints:make_app()
+wsgi_ping: /.ping
+install: logdb.entrypoints:install
+before_update: logdb.entrypoints:before_update
+update: logdb.entrypoints:update
+health_check: logdb.entrypoints:health_check
+before_delete: logdb.entrypoints:before_delete
+check_environment: logdb.entrypoints:check_environment
